@@ -43,8 +43,9 @@ def shuffle(trainData, trainTarget):
     return data, target
 
 
-def relu(x):
-    # TODO
+def ReLu(x):
+    x[x<0] = 0
+    return np.array(x)
 
 def softmax(x):
     # TODO
